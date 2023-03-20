@@ -1,10 +1,10 @@
 <div class="container__summary" id="container__summary">
-  <div class="summary__card" id="card">
+  <div class="summary__card" id="card" *ngFor="let card of listCards">
       <div class="container__card-img">
-        <img class="card__img" src="../../../assets/images/icon-work.svg" alt="work">
+        <img class="card__img" src='../../../assets/images/icon-{{ card.title }}.svg' alt="{{ card.title }}">
       </div>
       <div class="card__header">
-        <p class="header__title">Work</p>
+        <p class="header__title">{{ card.title }}</p>
         <p class="header__menu">...</p>
       </div>
       <div class="card__main">
@@ -13,80 +13,5 @@
       <div class="card__footer">
         <p class="footer_period" id="previous">period</p>
       </div>
-  </div>
-  <div class="summary__card" id="card">
-    <div class="container__card-img">
-      <img class="card__img" src="../../../assets/images/icon-play.svg" alt="work">
-    </div>
-    <div class="card__header">
-      <p class="header__title">Work</p>
-      <p class="header__menu">...</p>
-    </div>
-    <div class="card__main">
-      <p class="card__main-hours" id="hours">32hrs</p>
-    </div>
-    <div class="card__footer">
-      <p class="footer_period" id="previous">period</p>
-    </div>
-  </div>
-  <div class="summary__card" id="card">
-    <div class="container__card-img">
-      <img class="card__img" src="../../../assets/images/icon-study.svg" alt="work">
-    </div>
-    <div class="card__header">
-      <p class="header__title">Work</p>
-      <p class="header__menu">...</p>
-    </div>
-    <div class="card__main">
-      <p class="card__main-hours" id="hours">32hrs</p>
-    </div>
-    <div class="card__footer">
-      <p class="footer_period" id="previous">period</p>
-    </div>
-  </div>
-  <div class="summary__card" id="card">
-    <div class="container__card-img">
-      <img class="card__img" src="../../../assets/images/icon-exercise.svg" alt="work">
-    </div>
-    <div class="card__header">
-      <p class="header__title">Work</p>
-      <p class="header__menu">...</p>
-    </div>
-    <div class="card__main">
-      <p class="card__main-hours" id="hours">32hrs</p>
-    </div>
-    <div class="card__footer">
-      <p class="footer_period" id="previous">period</p>
-    </div>
-  </div>
-  <div class="summary__card" id="card">
-    <div class="container__card-img">
-      <img class="card__img" src="../../../assets/images/icon-social.svg" alt="work">
-    </div>
-    <div class="card__header">
-      <p class="header__title">Work</p>
-      <p class="header__menu">...</p>
-    </div>
-    <div class="card__main">
-      <p class="card__main-hours" id="hours">32hrs</p>
-    </div>
-    <div class="card__footer">
-      <p class="footer_period" id="previous">period</p>
-    </div>
-  </div>
-  <div class="summary__card" id="card">
-    <div class="container__card-img">
-      <img class="card__img" src="../../../assets/images/icon-self-care.svg" alt="work">
-    </div>
-    <div class="card__header">
-      <p class="header__title">Work</p>
-      <p class="header__menu">...</p>
-    </div>
-    <div class="card__main">
-      <p class="card__main-hours" id="hours">32hrs</p>
-    </div>
-    <div class="card__footer">
-      <p class="footer_period" id="previous">period</p>
-    </div>
   </div>
 </div>
