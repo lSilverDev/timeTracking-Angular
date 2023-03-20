@@ -1,0 +1,54 @@
+.container__summary{
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  width: 75%;
+  flex-wrap: wrap;
+}
+
+.summary__card{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: var(--dark-blue);
+  height: 50%;
+  border-radius: 15px;
+  margin: 0 1em 1em 1em;
+}
+
+.container__card-img{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--light-red-work);
+  overflow: hidden;
+  height: 20%;
+  border-radius: 15px;
+}
+
+.card__img{
+
+}
+
+.card__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.card__main{
+  padding: 0 0 0 1em;
+}
+
+.card__main-hours{
+  font-size: 2.5em;
+}
+
+.card__footer{
+  padding: .5em 0 0 1em;
+}
+
+.footer_period{
+  color: rgba(255, 255, 255, 0.432);
+}
