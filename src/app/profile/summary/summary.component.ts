@@ -10,14 +10,12 @@ import { card } from 'src/app/cards/card';
 export class SummaryComponent {
   listCards: card[] = [];
 
-  constructor(private service: CardService){
-
-  }
+  constructor(private service: CardService){}
 
   ngOnInit(): void{
     this.service.onList().subscribe((listCards) => {
       this.listCards = listCards;
-      console.log(this.listCards)
     });
   }
+
 }
