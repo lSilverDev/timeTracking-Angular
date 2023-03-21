@@ -42,12 +42,20 @@ body{
   background-color: var(--very-dark-blue);
   color: var(--white);
   font-size: var(--font-size-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 main{
   display: flex;
   flex-direction: row;
   margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .attribution { font-size: 11px; text-align: center; }
