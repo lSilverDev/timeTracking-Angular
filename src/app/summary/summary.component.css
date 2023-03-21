@@ -55,43 +55,6 @@
   text-align: left;
 }
 
-.profile__photo-container{
-  border-radius: 100%;
-  border: 4px solid var(--white);
-  width: 6em;
-  height: 6em;
-}
-
-.profile__photo{
-  width: 100%;
-  height: 100%;
-}
-
-.profile__info{
-  padding: 1.5em 0 5em 0;
-  width: 90%;
-}
-
-.profile__info-report{
-  color: rgba(255, 255, 255, 0.432);
-}
-
-.profile__info-name{
-  font-size: 2em;
-}
-
-.profile__reports-period{
-  padding: 1.5em;
-}
-
-.btn{
-  margin: .5em;
-  background-color: transparent;
-  color: white;
-  border: none;
-  text-align: left;
-}
-
 .container__summary{
   display: flex;
   flex-direction: row;
