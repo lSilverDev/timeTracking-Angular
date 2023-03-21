@@ -14,8 +14,20 @@ export class SummaryComponent {
 
   ngOnInit(): void{
     this.service.onList().subscribe((listCards) => {
-      this.listCards = listCards;
+      this.listCards =  this.organizaLista(listCards);
+      console.log(listCards[0])
     });
+  }
+
+  organizaLista(listCards: card[]){
+      listCards.forEach(element => {
+        var resultArray = Object.keys(element.timeframes).map((time: any) => {
+          let person = element.timeframes[time];
+          return person;
+        });
+        element.timeframes = resultArray;
+      });
+      return listCards;
   }
 
 }

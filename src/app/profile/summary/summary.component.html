@@ -8,10 +8,10 @@
         <p class="header__menu">...</p>
       </div>
       <div class="card__main">
-        <p class="card__main-hours" id="hours">32Hrs</p>
+        <p class="card__main-hours" id="hours">{{ card.timeframes[0].current }}Hrs</p>
       </div>
       <div class="card__footer">
-        <p class="footer_period" id="previous">period</p>
+        <p class="footer_period" id="previous">Last week - {{ card.timeframes[0].previous }}Hrs</p>
       </div>
   </div>
 </div>
