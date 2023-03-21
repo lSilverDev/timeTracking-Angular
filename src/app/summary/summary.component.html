@@ -1,0 +1,35 @@
+<main>
+  <div class="container">
+    <div class="container__profile">
+      <div class="profile__photo-container">
+        <img class="profile__photo" src="../../../assets/images/image-jeremy.png" alt="jeremy">
+      </div>
+      <div class="profile__info">
+        <p class="profile__info-report">Report for</p>
+        <p class="profile__info-name">Jeremy Robson</p>
+      </div>
+    </div>
+    <div class="profile__reports-period">
+      <button class="report-Daily btn" id="daily" (click)="changeRole(0)">Daily</button>
+      <button class="report-Weekly btn" id="weekly" (click)="changeRole(1)">Weekly</button>
+      <button class="report-Monthly btn" id="monthly" (click)="changeRole(2)">Monthly</button>
+    </div>
+  </div>
+  <div class="container__summary" id="container__summary">
+    <div class="summary__card" id="card" *ngFor="let card of listCards">
+        <div class="container__card-img">
+          <img class="card__img" src='../../../assets/images/icon-{{ card.title }}.svg' alt="{{ card.title }}">
+        </div>
+        <div class="card__header">
+          <p class="header__title">{{ card.title }}</p>
+          <p class="header__menu">...</p>
+        </div>
+        <div class="card__main">
+          <p class="card__main-hours" id="hours">{{ card.timeframes[time].current }}Hrs</p>
+        </div>
+        <div class="card__footer">
+          <p class="footer_period" id="previous">Last week - {{ card.timeframes[time].previous }}Hrs</p>
+        </div>
+    </div>
+  </div>
+</main>

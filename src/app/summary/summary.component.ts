@@ -1,5 +1,5 @@
-import { CardService } from './../../cards/card.service';
-import { Component } from '@angular/core';
+import { CardService } from '../cards/card.service';
+import { Component, Input } from '@angular/core';
 import { card } from 'src/app/cards/card';
 
 @Component({
@@ -9,13 +9,13 @@ import { card } from 'src/app/cards/card';
 })
 export class SummaryComponent {
   listCards: card[] = [];
+  time: number = 0;
 
   constructor(private service: CardService){}
 
   ngOnInit(): void{
     this.service.onList().subscribe((listCards) => {
       this.listCards =  this.organizaLista(listCards);
-      console.log(listCards[0])
     });
   }
 
@@ -30,4 +30,7 @@ export class SummaryComponent {
       return listCards;
   }
 
+  changeRole(time: number){
+    this.time = time;
+  }
 }
